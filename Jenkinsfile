@@ -23,9 +23,10 @@ pipeline {
 //            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
 //            archiveArtifacts artifacts: 'build/**', fingerprint: true
 //            archiveArtifacts artifacts: '**', fingerprint: true
-            archiveArtifacts artifacts: 'builds/**', fingerprint: true
+//            archiveArtifacts artifacts: 'builds/**', fingerprint: true
 //            junit 'build/reports/**/*.xml'
-            junit 'builds/**/*.xml'
+            archiveArtifacts artifacts: '**', fingerprint: true
+//            junit 'builds/**/*.xml'
         }
     }
 }

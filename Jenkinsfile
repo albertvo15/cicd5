@@ -20,7 +20,8 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
+//            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
+            archiveArtifacts artifacts: 'build/**', fingerprint: true
             junit 'build/reports/**/*.xml'
         }
     }
